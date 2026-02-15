@@ -363,9 +363,9 @@ def make_all_graphs(database_path, program_requirment_path, offered_path):
 
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Get the directory of the current file
-    database_path = os.path.join(base_dir,"..", 'Data', 'InputData','cleaned_course_list_FIX.csv')  # Join the components to form the path
-    program_requirment_path = os.path.join(base_dir,"..",'Data', 'InputData','Batch3.1.csv')  # Join the components to form the path
-    off_path=os.path.join(base_dir,"..",'Data', 'InputData','Offered_Courses.csv')
+    database_path = os.path.join(base_dir,"..", 'Data', 'InputData','cleaned_course_list_fix.csv')  # Join the components to form the path
+    program_requirment_path = os.path.join(base_dir,"..",'Data', 'InputData','program_requirments.csv.csv')  # Join the components to form the path
+    off_path=os.path.join(base_dir,"..",'Data', 'InputData','offered_courses.csv')
     missing = make_all_graphs(database_path,program_requirment_path,offered_path=off_path)
     no_spaces=[]
     ranges=[]

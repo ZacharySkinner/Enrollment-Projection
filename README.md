@@ -68,3 +68,33 @@ The data included here is **synthetic and reduced** for demonstration purposes o
 ![alt text](SampleOutput.png)
 
 Example of what the final enrollment projection output looked like after aggregating results across programs (synthetic data).
+
+## Running the Project
+
+### 1. Clone the repository
+```bash
+```
+git clone <repo-url>
+cd Enrollment-Projection
+```
+### 2. Create and activate a virtual environment
+Windows (PowerShell):
+```
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+macOS/Linux:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+### 3. Install dependencies
+```
+python -m pip install -r requirements.txt
+```
+### 4. Run the DAG builder
+```
+python datastructures/DAGBuilder.py
+```
+### 5. View results
+Output files are saved to the dag/ folder.
