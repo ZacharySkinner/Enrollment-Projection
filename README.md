@@ -72,7 +72,6 @@ Example of what the final enrollment projection output looked like after aggrega
 ## Running the Project
 
 ### 1. Clone the repository
-```bash
 ```
 git clone <repo-url>
 cd Enrollment-Projection
