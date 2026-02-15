@@ -1,0 +1,22 @@
+strict digraph {
+Start [node_type=start, completion_credits_needed="-1", credits_needed="-1", credits="-1", course_id="", color=red, cluster_dict=None, predictable=False, req_list=None];
+Graduation [node_type=end, completion_credits_needed="-1", credits_needed="-1", credits="-1", course_id="", color=red, cluster_dict=None, predictable=False, req_list=None];
+Start_majorRestrictiveElectivesList [node_type=subgraphnode, completion_credits_needed="-1", credits_needed="-1", credits="-1", course_id="", color=purple, cluster_dict=None, predictable=False, req_list=None];
+Finish_majorRestrictiveElectivesList [node_type=subgraphnode, completion_credits_needed="-1", credits_needed="-1", credits="-1", course_id="", color=purple, cluster_dict=None, predictable=False, req_list=None];
+majorRestrictiveElectivesList_credits_10_1 [node_type=creditsneeded, completion_credits_needed=1, credits_needed=10, credits=10, course_id="", color=purple, cluster_dict=None, predictable=False, req_list=None, required_credits=10];
+"majorRestrictiveElectivesList_SPED 614" [node_type=course, completion_credits_needed=1, credits_needed="-1", credits=4, course_id="SPED 614", color=purple, cluster_dict=None, predictable=True, req_list=None];
+"majorRestrictiveElectivesList_SPED 615" [node_type=course, completion_credits_needed=1, credits_needed="-1", credits=4, course_id="SPED 615", color=purple, cluster_dict=None, predictable=True, req_list=None];
+"majorRestrictiveElectivesList_SPED 656" [node_type=course, completion_credits_needed=1, credits_needed="-1", credits=3, course_id="SPED 656", color=purple, cluster_dict=None, predictable=True, req_list=None];
+"majorRestrictiveElectivesList_SPED 670" [node_type=course, completion_credits_needed=1, credits_needed="-1", credits=3, course_id="SPED 670", color=purple, cluster_dict=None, predictable=True, req_list=None];
+Start -> Start_majorRestrictiveElectivesList;
+Start_majorRestrictiveElectivesList -> "majorRestrictiveElectivesList_SPED 614";
+Start_majorRestrictiveElectivesList -> "majorRestrictiveElectivesList_SPED 615";
+Start_majorRestrictiveElectivesList -> "majorRestrictiveElectivesList_SPED 656";
+Start_majorRestrictiveElectivesList -> "majorRestrictiveElectivesList_SPED 670";
+Finish_majorRestrictiveElectivesList -> Graduation;
+majorRestrictiveElectivesList_credits_10_1 -> Finish_majorRestrictiveElectivesList;
+"majorRestrictiveElectivesList_SPED 614" -> majorRestrictiveElectivesList_credits_10_1;
+"majorRestrictiveElectivesList_SPED 615" -> majorRestrictiveElectivesList_credits_10_1;
+"majorRestrictiveElectivesList_SPED 656" -> majorRestrictiveElectivesList_credits_10_1;
+"majorRestrictiveElectivesList_SPED 670" -> majorRestrictiveElectivesList_credits_10_1;
+}

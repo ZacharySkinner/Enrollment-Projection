@@ -1,0 +1,10 @@
+# This contains all the packages that need to be installed that aren't a part of the base Python installation.
+# Refer to README.md for how to install them all at once.
+
+networkx
+pydot
+matplotlib
+pandas
+colorama
+pyvis
+openpyxl
