@@ -1,8 +1,8 @@
 # Enrollment-Projection
 # Degree Program DAG Builder (Project Snapshot)
 
-> **This repository is a snapshot of a single component extracted from a larger university analytics project.**  
-> The code shown here was fully designed and implemented by me and published independently to demonstrate my approach to modeling complex prerequisite logic and academic program structure. The original project included multiple contributors and confidential datasets that are not included in this public snapshot.
+**This repository is a snapshot of a single component extracted from a larger university analytics project.**  
+ The code shown here was fully designed and implemented by me and published independently to demonstrate my approach to modeling complex prerequisite logic and academic program structure. The original project included multiple contributors and confidential datasets that are not included in this public snapshot.
 
 ## What This Is
 
